@@ -9385,3 +9385,246 @@ Request URL: /portfolio-cakephp/img/test.png
 Stack Trace:
 #0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2015-01-10 16:41:45 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /portfolio-cakephp/img/test.png
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-10 17:43:30 Error: [MissingControllerException] Controller class PortfolioController could not be found.
+Exception Attributes: array (
+  'class' => 'PortfolioController',
+  'plugin' => NULL,
+)
+Request URL: /portfolio-cakephp/portfolio/kaoix-site/test.png
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-10 17:43:37 Error: [MissingControllerException] Controller class IndexController could not be found.
+Exception Attributes: array (
+  'class' => 'IndexController',
+  'plugin' => NULL,
+)
+Request URL: /portfolio-cakephp/index
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-10 17:43:42 Error: [MissingControllerException] Controller class PortfolioController could not be found.
+Exception Attributes: array (
+  'class' => 'PortfolioController',
+  'plugin' => NULL,
+)
+Request URL: /portfolio-cakephp/portfolio/kaoix-site/test.png
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-10 17:43:49 Error: [MissingControllerException] Controller class PortfolioController could not be found.
+Exception Attributes: array (
+  'class' => 'PortfolioController',
+  'plugin' => NULL,
+)
+Request URL: /portfolio-cakephp/portfolio/kaoix-site/test.png
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-10 17:43:57 Error: [MissingControllerException] Controller class PortfolioController could not be found.
+Exception Attributes: array (
+  'class' => 'PortfolioController',
+  'plugin' => NULL,
+)
+Request URL: /portfolio-cakephp/portfolio/kaoix-site/test.png
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-10 17:44:39 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /portfolio-cakephp/img/avartar.jpg
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-10 17:44:51 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /portfolio-cakephp/img/profile/avartar.jpg
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-10 17:44:52 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /portfolio-cakephp/img/profile/avartar.jpg
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-10 17:44:52 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /portfolio-cakephp/img/profile/avartar.jpg
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-10 17:44:52 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /portfolio-cakephp/img/profile/avartar.jpg
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-10 18:18:53 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /portfolio-cakephp/img/profile/my.png
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-10 18:18:54 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /portfolio-cakephp/img/profile/my.png
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-10 18:18:55 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /portfolio-cakephp/img/profile/my.png
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-10 20:19:48 Error: [MissingControllerException] Controller class ResController could not be found.
+Exception Attributes: array (
+  'class' => 'ResController',
+  'plugin' => NULL,
+)
+Request URL: /portfolio-cakephp/res/materialize.svg
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-10 20:21:59 Error: [MissingControllerException] Controller class ResController could not be found.
+Exception Attributes: array (
+  'class' => 'ResController',
+  'plugin' => NULL,
+)
+Request URL: /portfolio-cakephp/res/materialize.svg
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-10 20:22:04 Error: [MissingControllerException] Controller class ResController could not be found.
+Exception Attributes: array (
+  'class' => 'ResController',
+  'plugin' => NULL,
+)
+Request URL: /portfolio-cakephp/res/materialize.svg
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-10 20:23:16 Error: [MissingControllerException] Controller class ResController could not be found.
+Exception Attributes: array (
+  'class' => 'ResController',
+  'plugin' => NULL,
+)
+Request URL: /portfolio-cakephp/res/materialize.svg
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-10 20:23:48 Error: [MissingControllerException] Controller class ResController could not be found.
+Exception Attributes: array (
+  'class' => 'ResController',
+  'plugin' => NULL,
+)
+Request URL: /portfolio-cakephp/res/materialize.svg
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-10 20:24:03 Error: [MissingControllerException] Controller class ResController could not be found.
+Exception Attributes: array (
+  'class' => 'ResController',
+  'plugin' => NULL,
+)
+Request URL: /portfolio-cakephp/res/materialize.svg
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-10 20:24:13 Error: [MissingControllerException] Controller class ResController could not be found.
+Exception Attributes: array (
+  'class' => 'ResController',
+  'plugin' => NULL,
+)
+Request URL: /portfolio-cakephp/res/materialize.svg
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-10 20:24:31 Error: [MissingControllerException] Controller class ResController could not be found.
+Exception Attributes: array (
+  'class' => 'ResController',
+  'plugin' => NULL,
+)
+Request URL: /portfolio-cakephp/res/materialize.svg
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-10 20:24:38 Error: [MissingControllerException] Controller class ResController could not be found.
+Exception Attributes: array (
+  'class' => 'ResController',
+  'plugin' => NULL,
+)
+Request URL: /portfolio-cakephp/res/materialize.svg
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-10 20:24:44 Error: [MissingControllerException] Controller class ResController could not be found.
+Exception Attributes: array (
+  'class' => 'ResController',
+  'plugin' => NULL,
+)
+Request URL: /portfolio-cakephp/res/materialize.svg
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-10 20:24:53 Error: [MissingControllerException] Controller class ResController could not be found.
+Exception Attributes: array (
+  'class' => 'ResController',
+  'plugin' => NULL,
+)
+Request URL: /portfolio-cakephp/res/materialize.svg
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-10 20:24:59 Error: [MissingControllerException] Controller class ResController could not be found.
+Exception Attributes: array (
+  'class' => 'ResController',
+  'plugin' => NULL,
+)
+Request URL: /portfolio-cakephp/res/materialize.svg
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-10 20:25:56 Error: [MissingControllerException] Controller class ResController could not be found.
+Exception Attributes: array (
+  'class' => 'ResController',
+  'plugin' => NULL,
+)
+Request URL: /portfolio-cakephp/res/materialize.svg
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

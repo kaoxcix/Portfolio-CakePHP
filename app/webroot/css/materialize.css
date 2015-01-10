@@ -6338,7 +6338,7 @@ ul.side-nav.fixed {
     right: 0;
     left: auto; }
 
-@media only screen and (max-width : 992px) {
+@media only screen and (max-width : 600px) {
   ul.side-nav.fixed {
     left: -250px; }
     ul.side-nav.fixed.right-aligned {

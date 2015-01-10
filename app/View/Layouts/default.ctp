@@ -25,6 +25,7 @@ $siteDescription = "NINEKAO.COM | My Portfolio and Profile";
 		<?php echo $siteDescription ?>:
 		<?php //echo $this->fetch('title'); ?>
 	</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<?php
 		echo $this->Html->meta('icon');
 
@@ -33,6 +34,7 @@ $siteDescription = "NINEKAO.COM | My Portfolio and Profile";
 		echo $this->Html->script('jquery-1.11.2.js');
 		echo $this->Html->script('materialize.js');
 		echo $this->Html->script('main-portfolio.js');
+		echo $this->Html->script('simple-typing-carousel.js');
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
@@ -41,23 +43,26 @@ $siteDescription = "NINEKAO.COM | My Portfolio and Profile";
 </head>
 <body>
     <header>
-    	
+      <nav class="hide-on-med-and-up">
+          <div class="nav-wrapper">
+          	<a href="#" class="brand-logo">NINE<strong>KAO</strong></a>
+          	<a class="button-collapse" href="#" data-activates="nav-mobile"><i class="mdi-navigation-menu"></i></a>
+          </div>
+      </nav>
       <ul id="nav-mobile" class="side-nav fixed">
         <li class="logo valign-wrapper">
-        	<h1>NINE<strong>KAO</strong></h1>
+        	NINE<strong>KAO</strong>
         </li>
-        <li ><a href=""><i class="mdi-action-account-box"></i>ABOUT</a></li>
-        <li><a href=""><i class="mdi-action-account-box"></i>Menu-2</a></li>
-        <li><a href=""><i class="mdi-action-account-box"></i>Menu-3</a></li>
-        <li><a href=""><i class="mdi-action-account-box"></i>Menu-4</a></li>
+        <div class="profile-image hide-on-small-only">
+			<?php echo $this->Html->image('profile/avartar.png'); ?>
+		</div>
+        <li><a href=""><i class="mdi-action-account-box"></i>PORTFOLIO</a></li>
+        <li><a href=""><i class="mdi-action-account-box"></i>CONTACT ME</a></li>
       </ul>
     </header> <!-- End main -->
     
     <main>
-    <div class="container">
-		<?php echo $this->fetch('content'); ?>
-    
-    </div> <!-- End container -->
+		<?php echo $this->fetch('content'); ?> 
     </main> <!-- End main -->
   </body>
 </html>
