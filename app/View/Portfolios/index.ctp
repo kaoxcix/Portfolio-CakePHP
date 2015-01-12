@@ -32,12 +32,16 @@
 			<div class="line"></div>
 			<span class="h1"><strong>My Skill</strong></span>
 			<p>
-				<i class="mdi-toggle-check-box"></i>Experience in Flat PHP Programming<br>
-				<i class="mdi-toggle-check-box"></i>Experience in CakePHP Programming<br>
-				<i class="mdi-toggle-check-box"></i>Experience in Git(Github)<br>
-				<i class="mdi-toggle-check-box"></i>Experience in Java Script, Ajax, CSS<br>
+				<i class="mdi-toggle-check-box"></i>Flat PHP Programming<br>
+				<i class="mdi-toggle-check-box"></i>CakePHP Programming<br>
+				<i class="mdi-toggle-check-box"></i>Git (Github)<br>
+				<i class="mdi-toggle-check-box"></i>Java Script, Ajax, CSS<br>
 			</p>
 		</div> <!-- End profile -->
 	</div> <!-- End col l3  -->
 </div> <!-- End row -->
 </div> <!-- End container -->
+
+
+
+          

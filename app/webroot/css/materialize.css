@@ -5345,6 +5345,8 @@ ul.tabs li.tab {
   display: inline-block;
   height: 36px;
   margin-bottom: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
   padding: 0 2rem;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;

@@ -56,13 +56,57 @@ $siteDescription = "NINEKAO.COM | My Portfolio and Profile";
         <div class="profile-image hide-on-small-only">
 			<?php echo $this->Html->image('profile/avartar.png'); ?>
 		</div>
-        <li><a href=""><i class="mdi-action-account-box"></i>PORTFOLIO</a></li>
-        <li><a href=""><i class="mdi-action-account-box"></i>CONTACT ME</a></li>
+        <li><?php echo $this->html->link("<i class='mdi-action-account-box'></i>PORTFOLIO","",array('escape' => false )); ?></li>
+        <li><?php echo $this->html->link("<i class='mdi-action-account-box'></i>CONTACT ME","#contact-me",array('class' => 'modal-trigger', 'escape' => false )); ?></li>
+        <li><?php echo $this->html->link("<i class='mdi-action-account-box'></i>ADMIN ZONE","#admin-login",array('class' => 'modal-trigger', 'escape' => false )); ?></li>
       </ul>
     </header> <!-- End main -->
     
     <main>
 		<?php echo $this->fetch('content'); ?> 
     </main> <!-- End main -->
+    
+     <!-- contact-me Modal -->
+	<div id="contact-me" class="modal">
+		<h4>SAY HELLO</h4>
+			<?php 
+				echo $this->Form->create('contact');
+	            echo "If you need anything send me something";
+	        ?>
+	        <br><br>
+	        <div class="row">
+      		<div class="input-field col s4"><?php echo $this->Form->input('name', array('class' => '')); ?></div>
+	        <div class="input-field col s4"><?php echo $this->Form->input('subject'); ?></div>
+	        <div class="input-field col s4"><?php echo $this->Form->input('email'); ?></div>
+	        </div>
+	        
+	        <div class="row">
+      		<div class="input-field col s12"><?php echo $this->Form->input('message',array('rows' => '5')); ?></div>
+      		</div>
+	        <?php 
+	   		 	echo $this->Form->end(array('label' => 'Send', 'class' => 'btn modal-close  blue-grey darken-2 left')); 
+	   		 	echo $this->Form->button('Cancel', array('class' => 'btn modal-close  blue-grey darken-2 left'));
+   		 	?>
+	</div>
+    
+    <!-- admin-login Modal -->
+	<div id="admin-login" class="modal">
+		<h4>ADMIN ZONE</h4>
+			<?php 
+				echo $this->Form->create('login');
+	            echo "Please enter your username and password";
+	        ?>
+	        	<br><br>
+	        	
+	            <div class="row"><div class="input-field col s6"><?php echo $this->Form->input('username'); ?></div>
+	        	<div class="input-field col s6"><?php echo $this->Form->input('password'); ?></div></div>
+	       	<?php 
+	   		 	echo $this->Form->end(array('label' => 'Login', 'class' => 'btn modal-close  blue-grey darken-2 left')); 
+	   		 	echo $this->Form->button('Cancel', array('class' => 'btn modal-close  blue-grey darken-2 left'));
+   		 	?>
+	</div>
+	
+	
+	
   </body>
 </html>
