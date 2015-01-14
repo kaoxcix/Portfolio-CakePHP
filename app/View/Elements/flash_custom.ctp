@@ -1,0 +1,1 @@
+<script>toast('<?php echo $message; ?>', 4000);</script>
