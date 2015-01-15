@@ -50,7 +50,7 @@ $siteDescription = "NINEKAO.COM | My Portfolio and Profile";
           </div>
       </nav>
       <ul id="nav-mobile" class="side-nav fixed">
-        <li class="logo">
+        <li class="logo valign-wrapper">
         	NINE<strong>KAO</strong>
         </li>
         <div class="profile-image hide-on-small-only">
@@ -63,10 +63,7 @@ $siteDescription = "NINEKAO.COM | My Portfolio and Profile";
     </header> <!-- End main -->
     
     <main>
-    	<?php 
-    	echo $this->Session->flash('flash', array('element' => 'flash_custom')); 
-		echo $this->fetch('content'); 
-		?> 
+		<?php echo $this->fetch('content'); ?> 
     </main> <!-- End main -->
     
      <!-- contact-me Modal -->
@@ -87,7 +84,7 @@ $siteDescription = "NINEKAO.COM | My Portfolio and Profile";
       		<div class="input-field col s12"><?php echo $this->Form->input('message',array('rows' => '5')); ?></div>
       		</div>
 	        <?php 
-	   		 	echo $this->Form->end(array('label' => 'Send', 'class' => 'btn blue-grey darken-2 left')); 
+	   		 	echo $this->Form->end(array('label' => 'Send', 'class' => 'btn modal-close  blue-grey darken-2 left')); 
 	   		 	echo $this->Form->button('Cancel', array('class' => 'btn modal-close  blue-grey darken-2 left'));
    		 	?>
 	</div>
@@ -96,14 +93,15 @@ $siteDescription = "NINEKAO.COM | My Portfolio and Profile";
 	<div id="admin-login" class="modal">
 		<h4>ADMIN ZONE</h4>
 			<?php 
-				echo $this->Form->create('login', array('url' => array('controller' => 'Portfolios', 'action' => 'login')));
+				echo $this->Form->create('login');
 	            echo "Please enter your username and password";
 	        ?>
 	        	<br><br>
+	        	
 	            <div class="row"><div class="input-field col s6"><?php echo $this->Form->input('username'); ?></div>
 	        	<div class="input-field col s6"><?php echo $this->Form->input('password'); ?></div></div>
 	       	<?php 
-	   		 	echo $this->Form->end(array('label' => 'Login', 'class' => 'btn blue-grey darken-2 left')); 
+	   		 	echo $this->Form->end(array('label' => 'Login', 'class' => 'btn modal-close  blue-grey darken-2 left')); 
 	   		 	echo $this->Form->button('Cancel', array('class' => 'btn modal-close  blue-grey darken-2 left'));
    		 	?>
 	</div>
