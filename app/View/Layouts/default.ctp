@@ -63,6 +63,7 @@ $siteDescription = "NINEKAO.COM | My Portfolio and Profile";
     </header> <!-- End main -->
     
     <main>
+    	<?php echo $this->Session->flash('flash', array('element' => 'flash_custom')); ?> 
 		<?php echo $this->fetch('content'); ?> 
     </main> <!-- End main -->
     
