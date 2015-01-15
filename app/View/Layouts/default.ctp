@@ -68,44 +68,73 @@ $siteDescription = "NINEKAO.COM | My Portfolio and Profile";
     </main> <!-- End main -->
     
      <!-- contact-me Modal -->
-	<div id="contact-me" class="modal">
-		<h4>SAY HELLO</h4>
+	<div id="contact-me" class="my-modal modal-close">
+		<div class="my-modal-dialog">
+		<div class="row">
+			<div class="col s8"><h4>SAY HELLO</h4>If you need anything send me something</div>
+			<div class="col s4 textRight"><h4><?php echo $this->Html->link('<i class="mdi-navigation-close"></i>','#',
+					array('class' => 'modal-close blue-grey-text tooltipped', 'data-position' => 'top', 'data-tooltip' => 'Close', 'escape' => false)); ?></h4></div>
+		</div>	
 			<?php 
 				echo $this->Form->create('contact');
-	            echo "If you need anything send me something";
 	        ?>
 	        <br><br>
 	        <div class="row">
-      		<div class="input-field col s4"><?php echo $this->Form->input('name', array('class' => '')); ?></div>
-	        <div class="input-field col s4"><?php echo $this->Form->input('subject'); ?></div>
-	        <div class="input-field col s4"><?php echo $this->Form->input('email'); ?></div>
+      		<div class="col s4"><?php echo $this->Form->input('name', array('class' => '')); ?></div>
+	        <div class="col s4"><?php echo $this->Form->input('subject'); ?></div>
+	        <div class="col s4"><?php echo $this->Form->input('email'); ?></div>
 	        </div>
 	        
 	        <div class="row">
-      		<div class="input-field col s12"><?php echo $this->Form->input('message',array('rows' => '5')); ?></div>
+      		<div class="col s12"><?php echo $this->Form->input('message',array('rows' => '5')); ?></div>
       		</div>
+      		<div class="row">
 	        <?php 
-	   		 	echo $this->Form->end(array('label' => 'Send', 'class' => 'btn modal-close  blue-grey darken-2 left')); 
-	   		 	echo $this->Form->button('Cancel', array('class' => 'btn modal-close  blue-grey darken-2 left'));
+	   		 	echo $this->Form->end(array('label' => 'Send', 'class' => 'btn modal-close  blue-grey darken-2 right')); 
+	   		 	echo $this->Form->button('Cancel', array('class' => 'btn modal-close  blue-grey darken-2 right'));
    		 	?>
+   		 	</div>
+		</div>
 	</div>
     
     <!-- admin-login Modal -->
-	<div id="admin-login" class="modal">
-		<h4>ADMIN ZONE</h4>
-			<?php 
-				echo $this->Form->create('login');
-	            echo "Please enter your username and password";
+	<div id="admin-login" class="my-modal">
+		<div class="my-modal-dialog">
+		<div class="row">
+			<div class="col s8"><h4>ADMIN ZONE</h4>Please enter your username and password</div>
+			<div class="col s4 textRight"><h4>
+				<?php 
+					  if($this->Session->check('Auth.User')) {
+							echo $this->Html->link('<i class="mdi-action-exit-to-app"></i>',
+								array('controller' => 'Users',	'action' => 'logout'),
+								array('class' => 'blue-grey-text tooltipped', 'data-position' => 'top', 'data-tooltip' => 'Log Out', 'escape' => false));
+					  }
+					  echo $this->Html->link('<i class="mdi-navigation-close"></i>','#',
+					  		array('class' => 'modal-close blue-grey-text tooltipped', 'data-position' => 'top', 'data-tooltip' => 'Close', 'escape' => false));
+				?>
+			</h4></div>
+		</div>
+		<?php if($this->Session->check('Auth.User')){ 
+				
+			
+			
+			  } 
+			  else { 
+				echo $this->Form->create('User', array('url' => array('controller' => 'Users',	'action' => 'login')));
 	        ?>
 	        	<br><br>
 	        	
-	            <div class="row"><div class="input-field col s6"><?php echo $this->Form->input('username'); ?></div>
-	        	<div class="input-field col s6"><?php echo $this->Form->input('password'); ?></div></div>
-	       	<?php 
-	   		 	echo $this->Form->end(array('label' => 'Login', 'class' => 'btn modal-close  blue-grey darken-2 left')); 
-	   		 	echo $this->Form->button('Cancel', array('class' => 'btn modal-close  blue-grey darken-2 left'));
-   		 	?>
+	            <div class="row"><div class="col s6"><?php echo $this->Form->input('username'); ?></div>
+	        	<div class="col s6"><?php echo $this->Form->input('password'); ?></div></div>
+	        	<div class="row">
+	       		<?php 
+	   		 	echo $this->Form->end(array('label' => 'Login', 'class' => 'btn blue-grey darken-2 right')); 
+	   		 	echo $this->Form->button('Cancel', array('class' => 'btn modal-close  blue-grey darken-2 right'));
+			  } ?>
+			  </div>
+		</div>
 	</div>
+	
 	
 	
 	

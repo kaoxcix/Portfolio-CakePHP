@@ -9628,3 +9628,93 @@ Request URL: /portfolio-cakephp/res/materialize.svg
 Stack Trace:
 #0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2015-01-15 18:18:10 Error: [MissingViewException] View file "Users\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users\\index.ctp',
+)
+Request URL: /portfolio-cakephp/Users
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\lib\Cake\View\View.php(470): View->_getViewFileName(NULL)
+#1 F:\Workspace PHP\workspace\portfolio-cakephp\lib\Cake\Controller\Controller.php(959): View->render(NULL, NULL)
+#2 F:\Workspace PHP\workspace\portfolio-cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 F:\Workspace PHP\workspace\portfolio-cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-01-15 18:19:23 Error: [MissingViewException] View file "Users\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users\\index.ctp',
+)
+Request URL: /portfolio-cakephp/Users
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\lib\Cake\View\View.php(470): View->_getViewFileName(NULL)
+#1 F:\Workspace PHP\workspace\portfolio-cakephp\lib\Cake\Controller\Controller.php(959): View->render(NULL, NULL)
+#2 F:\Workspace PHP\workspace\portfolio-cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 F:\Workspace PHP\workspace\portfolio-cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-01-15 18:19:24 Error: [MissingViewException] View file "Users\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users\\index.ctp',
+)
+Request URL: /portfolio-cakephp/Users
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\lib\Cake\View\View.php(470): View->_getViewFileName(NULL)
+#1 F:\Workspace PHP\workspace\portfolio-cakephp\lib\Cake\Controller\Controller.php(959): View->render(NULL, NULL)
+#2 F:\Workspace PHP\workspace\portfolio-cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 F:\Workspace PHP\workspace\portfolio-cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-01-15 18:19:32 Error: [MissingViewException] View file "Users\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users\\index.ctp',
+)
+Request URL: /portfolio-cakephp/Users
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\lib\Cake\View\View.php(470): View->_getViewFileName(NULL)
+#1 F:\Workspace PHP\workspace\portfolio-cakephp\lib\Cake\Controller\Controller.php(959): View->render(NULL, NULL)
+#2 F:\Workspace PHP\workspace\portfolio-cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 F:\Workspace PHP\workspace\portfolio-cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-01-15 18:20:44 Error: [MissingViewException] View file "Users\login.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users\\login.ctp',
+)
+Request URL: /portfolio-cakephp/Users/login
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\lib\Cake\View\View.php(470): View->_getViewFileName(NULL)
+#1 F:\Workspace PHP\workspace\portfolio-cakephp\lib\Cake\Controller\Controller.php(959): View->render(NULL, NULL)
+#2 F:\Workspace PHP\workspace\portfolio-cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 F:\Workspace PHP\workspace\portfolio-cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-01-15 18:35:23 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [F:\Workspace PHP\workspace\portfolio-cakephp\app\View\Layouts\default.ctp, line 99]
+2015-01-15 18:35:23 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /portfolio-cakephp/Portfolios
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'F:\\Workspace PH...', 99)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'F:\\Workspace PH...', 99, Array)
+#2 F:\Workspace PHP\workspace\portfolio-cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'F:\\Workspace PH...', 99, Array)
+#3 F:\Workspace PHP\workspace\portfolio-cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-01-15 19:19:05 Error: Fatal Error (4): syntax error, unexpected '<' in [F:\Workspace PHP\workspace\portfolio-cakephp\app\View\Layouts\default.ctp, line 109]
+2015-01-15 19:19:05 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /portfolio-cakephp/Portfolios
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'F:\\Workspace PH...', 109)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'F:\\Workspace PH...', 109, Array)
+#2 F:\Workspace PHP\workspace\portfolio-cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'F:\\Workspace PH...', 109, Array)
+#3 F:\Workspace PHP\workspace\portfolio-cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-01-15 21:16:54 Error: Fatal Error (4): syntax error, unexpected '$this' (T_VARIABLE) in [F:\Workspace PHP\workspace\portfolio-cakephp\app\Controller\UsersController.php, line 21]
+2015-01-15 21:16:54 Error: [FatalErrorException] syntax error, unexpected '$this' (T_VARIABLE)
+Request URL: /portfolio-cakephp/Users/login
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'F:\\Workspace PH...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'F:\\Workspace PH...', 21, Array)
+#2 F:\Workspace PHP\workspace\portfolio-cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'F:\\Workspace PH...', 21, Array)
+#3 F:\Workspace PHP\workspace\portfolio-cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
