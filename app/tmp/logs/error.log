@@ -9718,3 +9718,321 @@ Stack Trace:
 #3 F:\Workspace PHP\workspace\portfolio-cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2015-01-16 10:12:30 Error: Fatal Error (4): syntax error, unexpected 'enter' (T_STRING) in [F:\Workspace PHP\workspace\portfolio-cakephp\app\View\Layouts\default.ctp, line 120]
+2015-01-16 10:12:30 Error: [FatalErrorException] syntax error, unexpected 'enter' (T_STRING)
+Request URL: /portfolio-cakephp/Portfolios
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'F:\\Workspace PH...', 120)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'F:\\Workspace PH...', 120, Array)
+#2 F:\Workspace PHP\workspace\portfolio-cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'F:\\Workspace PH...', 120, Array)
+#3 F:\Workspace PHP\workspace\portfolio-cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-01-16 12:53:10 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /portfolio-cakephp/img/profile/avarta%E0%B8%B3r.png
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-16 12:53:14 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /portfolio-cakephp/img/profile/avarta%E0%B8%B3r.png
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-16 12:54:20 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /portfolio-cakephp/img/profile/avarta%E0%B8%B3r.png
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-16 12:54:53 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /portfolio-cakephp/img/profile/avarta%E0%B8%B3r.png
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-16 12:55:04 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /portfolio-cakephp/img/profile/avarta%E0%B8%B3r.png
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-16 12:57:43 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /portfolio-cakephp/img/profile/avarta%E0%B8%B3r.png
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-16 12:57:55 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /portfolio-cakephp/img/profile/avarta%E0%B8%B3r.png
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-16 12:57:59 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /portfolio-cakephp/img/profile/avarta%E0%B8%B3r.png
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-16 13:00:16 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /portfolio-cakephp/img/profile/avarta%E0%B8%B3r.png
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-16 13:00:17 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /portfolio-cakephp/img/profile/avarta%E0%B8%B3r.png
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-16 13:00:19 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /portfolio-cakephp/img/profile/avarta%E0%B8%B3r.png
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-16 13:00:28 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /portfolio-cakephp/img/profile/avarta%E0%B8%B3r.png
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-16 13:00:30 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /portfolio-cakephp/img/profile/avarta%E0%B8%B3r.png
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-16 13:00:34 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /portfolio-cakephp/img/profile/avarta%E0%B8%B3r.png
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-16 13:00:57 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /portfolio-cakephp/img/profile/avarta%E0%B8%B3r.png
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-16 13:00:57 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /portfolio-cakephp/img/profile/avarta%E0%B8%B3r.png
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-16 13:00:59 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /portfolio-cakephp/img/profile/avarta%E0%B8%B3r.png
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-16 13:05:47 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /portfolio-cakephp/img/profile/avarta%E0%B8%B3r.png
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-16 13:05:51 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /portfolio-cakephp/img/profile/avarta%E0%B8%B3r.png
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-16 13:06:05 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /portfolio-cakephp/img/profile/avarta%E0%B8%B3r.png
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-16 13:06:52 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /portfolio-cakephp/img/profile/avarta%E0%B8%B3r.png
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-16 13:06:55 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /portfolio-cakephp/img/profile/avarta%E0%B8%B3r.png
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-16 13:06:58 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /portfolio-cakephp/img/profile/avarta%E0%B8%B3r.png
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-16 13:07:03 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /portfolio-cakephp/img/profile/avarta%E0%B8%B3r.png
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-16 13:07:04 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /portfolio-cakephp/img/profile/avarta%E0%B8%B3r.png
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-16 13:07:16 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /portfolio-cakephp/img/profile/avarta%E0%B8%B3r.png
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-16 13:07:23 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /portfolio-cakephp/img/profile/avarta%E0%B8%B3r.png
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-16 13:07:31 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /portfolio-cakephp/img/profile/avarta%E0%B8%B3r.png
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-16 13:08:14 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /portfolio-cakephp/img/profile/avarta%E0%B8%B3r.png
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-16 13:08:15 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /portfolio-cakephp/img/profile/avarta%E0%B8%B3r.png
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-16 13:09:02 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /portfolio-cakephp/img/profile/avarta%E0%B8%B3r.png
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-16 13:12:55 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /portfolio-cakephp/img/profile/avarta%E0%B8%B3r.png
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-16 13:39:44 Error: Fatal Error (1): Call to a member function find() on a non-object in [F:\Workspace PHP\workspace\portfolio-cakephp\app\Controller\PortfoliosController.php, line 5]
+2015-01-16 13:39:44 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /portfolio-cakephp/Portfolios
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'F:\\Workspace PH...', 5)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'F:\\Workspace PH...', 5, Array)
+#2 F:\Workspace PHP\workspace\portfolio-cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'F:\\Workspace PH...', 5, Array)
+#3 F:\Workspace PHP\workspace\portfolio-cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-01-16 13:41:02 Error: Fatal Error (1): Call to a member function find() on a non-object in [F:\Workspace PHP\workspace\portfolio-cakephp\app\Controller\PortfoliosController.php, line 5]
+2015-01-16 13:41:02 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /portfolio-cakephp/Portfolios
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'F:\\Workspace PH...', 5)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'F:\\Workspace PH...', 5, Array)
+#2 F:\Workspace PHP\workspace\portfolio-cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'F:\\Workspace PH...', 5, Array)
+#3 F:\Workspace PHP\workspace\portfolio-cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

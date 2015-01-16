@@ -1,4 +1,5 @@
 <div class="container">
+
 <div class="row">
 	<div class="col l9">
 	<?php for($i=1;$i<=9;$i++){?>
@@ -22,20 +23,17 @@
 
 	<div class="col l3 hide-on-med-and-down">
 		<div class="profile">
-			<span class="h1">I am Sadayu Thongchan<br>and </span><span class="h2"><strong><span class="txt-rotate" data-period="2000" data-rotate='[ "I am a Programmer.", "I love programming." ]'></span></strong></span>
+			
+			<span class="h1">I am <?php echo $profile['Profile']['name']; ?><br>and </span><span class="h2"><strong><span class="txt-rotate" data-period="2000" data-rotate='[ "I am a Programmer.", "I love programming." ]'></span></strong></span>
 			<div class="line"></div>
 			<span class="h1"><strong>I'm so happy you're visiting</strong></span>
-			<p>My name is Alexey Abramov. I'm a graphic designer,living in Moscow and working with clients from all over the world. <br><br>
-			   I sincerely believe that every business must have a unique identity and every work needs to be attractive and eye-catching. 
-			   That's why i create memorable, user-friendly web sites, vivid identities, rich illustrations and high quality prints for 
-			   all types of businesses and personalitie</p>
+			<p><?php echo $profile['Profile']['intro']; ?></p>
 			<div class="line"></div>
 			<span class="h1"><strong>My Skill</strong></span>
-			<p>
-				<i class="mdi-toggle-check-box"></i>Flat PHP Programming<br>
-				<i class="mdi-toggle-check-box"></i>CakePHP Programming<br>
-				<i class="mdi-toggle-check-box"></i>Git (Github)<br>
-				<i class="mdi-toggle-check-box"></i>Java Script, Ajax, CSS<br>
+			<p>	<?php $skill = explode("<br>",$profile['Profile']['skill']); 
+				foreach($skill as $skill) {?>
+				<i class="mdi-toggle-check-box"></i><?php echo $skill; ?><br>
+				<?php } ?>
 			</p>
 		</div> <!-- End profile -->
 	</div> <!-- End col l3  -->

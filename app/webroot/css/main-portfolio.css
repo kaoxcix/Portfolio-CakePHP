@@ -21,10 +21,13 @@ header nav {
 	background-color: #344563;
 	z-index:999;
 }
-header #nav-mobile{
+header #nav-mobile, .collapsible, .collapsible-body{
 	background-color: #344563;
 }
-header ul.side-nav.fixed li:hover {
+header .collapsible-body ul{
+	background-color: #44597F;
+}
+header ul.side-nav.fixed li:hover, ul.side-nav.fixed li.active { 
 	background-color: #3d5074;
 }
 header ul.side-nav.fixed{
@@ -59,9 +62,9 @@ header #nav-mobile i {
 	vertical-align:middle;
 	margin-right: 10px;
 }
-header #nav-mobile a {
+header #nav-mobile a, .collapsible-header {
 	color: #fff;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 300;
 }
 main .card {
@@ -125,6 +128,9 @@ main .profile p i{
 }
 .my-modal-dialog  h1, .modal h2, .modal h3, .modal h4 {
     margin-top: 0; 
+}
+.admin-modal {
+	width: 550px;;
 }
 .left {
 	float: left;

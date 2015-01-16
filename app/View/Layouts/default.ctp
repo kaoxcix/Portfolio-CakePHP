@@ -25,6 +25,7 @@ $siteDescription = "NINEKAO.COM | My Portfolio and Profile";
 		<?php echo $siteDescription ?>:
 		<?php //echo $this->fetch('title'); ?>
 	</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<?php
 		echo $this->Html->meta('icon');
@@ -42,6 +43,9 @@ $siteDescription = "NINEKAO.COM | My Portfolio and Profile";
 	?>
 </head>
 <body>
+<!--------------------------------- 
+HEADER WITH TOP NAV FOR MOBILE
+----------------------------------->
     <header>
       <nav class="hide-on-med-and-up">
           <div class="nav-wrapper">
@@ -49,6 +53,9 @@ $siteDescription = "NINEKAO.COM | My Portfolio and Profile";
           	<a class="button-collapse" href="#" data-activates="nav-mobile"><i class="mdi-navigation-menu"></i></a>
           </div>
       </nav>
+<!--------------------------------- 
+HEADER WITH SIDE NAV FOR ALL
+----------------------------------->	
       <ul id="nav-mobile" class="side-nav fixed">
         <li class="logo valign-wrapper">
         	NINE<strong>KAO</strong>
@@ -56,87 +63,54 @@ $siteDescription = "NINEKAO.COM | My Portfolio and Profile";
         <div class="profile-image hide-on-small-only">
 			<?php echo $this->Html->image('profile/avartar.png'); ?>
 		</div>
-        <li><?php echo $this->html->link("<i class='mdi-action-account-box'></i>PORTFOLIO","",array('escape' => false )); ?></li>
+        <li><?php echo $this->html->link("<i class='mdi-action-account-box'></i>PORTFOLIO","/",array('escape' => false )); ?></li>
         <li><?php echo $this->html->link("<i class='mdi-action-account-box'></i>CONTACT ME","#contact-me",array('class' => 'modal-trigger', 'escape' => false )); ?></li>
-        <li><?php echo $this->html->link("<i class='mdi-action-account-box'></i>ADMIN ZONE","#admin-login",array('class' => 'modal-trigger', 'escape' => false )); ?></li>
+        <?php if(!$this->Session->check('Auth.User')) { ?>
+        	<li><?php echo $this->html->link("<i class='mdi-action-account-box'></i>ADMIN ZONE","#admin-login",array('class' => 'modal-trigger', 'escape' => false )); ?></li>
+        <?php } else { ?>
+        <li class="no-padding">
+	        <ul class="collapsible collapsible-accordion">
+				<li>
+				<div class="collapsible-header"></i><i class='mdi-action-account-box'></i>ADMIN ZONE<i class="mdi-navigation-arrow-drop-down"></i></div>
+				<div class="collapsible-body">
+				<ul>
+					<li><?php echo $this->html->link("<i class='mdi-action-account-box'></i>EDIT PROFILE","#admin-edit-profile",array('class' => 'modal-trigger', 'escape' => false )); ?></li>
+					<li><?php echo $this->html->link("<i class='mdi-action-account-box'></i>ADD PORTFOLIO","#admin-add-portfolio",array('class' => 'modal-trigger', 'escape' => false )); ?></li>
+					<li><?php echo $this->html->link("<i class='mdi-action-account-box'></i>LOG OUT", array('controller' => 'Users', 'action' => 'logout'),array('escape' => false )); ?></li>
+				</ul>
+				</div>
+				</li>
+			</ul>
+		</li>
+		<?php } ?>
       </ul>
-    </header> <!-- End main -->
-    
+    </header> <!-- End header -->
+<!--------------------------------- 
+MAIN FOR FETCH CONTENT
+----------------------------------->	
     <main>
-    	<?php echo $this->Session->flash('flash', array('element' => 'flash_custom')); ?> 
+    	<?php echo $this->Session->flash('flash', array('element' => 'flash-custom')); ?> 
 		<?php echo $this->fetch('content'); ?> 
     </main> <!-- End main -->
     
-     <!-- contact-me Modal -->
-	<div id="contact-me" class="my-modal modal-close">
-		<div class="my-modal-dialog">
-		<div class="row">
-			<div class="col s8"><h4>SAY HELLO</h4>If you need anything send me something</div>
-			<div class="col s4 textRight"><h4><?php echo $this->Html->link('<i class="mdi-navigation-close"></i>','#',
-					array('class' => 'modal-close blue-grey-text tooltipped', 'data-position' => 'top', 'data-tooltip' => 'Close', 'escape' => false)); ?></h4></div>
-		</div>	
-			<?php 
-				echo $this->Form->create('contact');
-	        ?>
-	        <br><br>
-	        <div class="row">
-      		<div class="col s4"><?php echo $this->Form->input('name', array('class' => '')); ?></div>
-	        <div class="col s4"><?php echo $this->Form->input('subject'); ?></div>
-	        <div class="col s4"><?php echo $this->Form->input('email'); ?></div>
-	        </div>
-	        
-	        <div class="row">
-      		<div class="col s12"><?php echo $this->Form->input('message',array('rows' => '5')); ?></div>
-      		</div>
-      		<div class="row">
-	        <?php 
-	   		 	echo $this->Form->end(array('label' => 'Send', 'class' => 'btn modal-close  blue-grey darken-2 right')); 
-	   		 	echo $this->Form->button('Cancel', array('class' => 'btn modal-close  blue-grey darken-2 right'));
-   		 	?>
-   		 	</div>
-		</div>
-	</div>
+<!--------------------------------- 
+LOAD MODAL	
+----------------------------------->	    
+    <!-- contact-me Modal -->
+	<?php echo $this->element('modal/contact-me-modal'); ?>
     
-    <!-- admin-login Modal -->
-	<div id="admin-login" class="my-modal">
-		<div class="my-modal-dialog">
-		<div class="row">
-			<div class="col s8"><h4>ADMIN ZONE</h4>Please enter your username and password</div>
-			<div class="col s4 textRight"><h4>
-				<?php 
-					  if($this->Session->check('Auth.User')) {
-							echo $this->Html->link('<i class="mdi-action-exit-to-app"></i>',
-								array('controller' => 'Users',	'action' => 'logout'),
-								array('class' => 'blue-grey-text tooltipped', 'data-position' => 'top', 'data-tooltip' => 'Log Out', 'escape' => false));
-					  }
-					  echo $this->Html->link('<i class="mdi-navigation-close"></i>','#',
-					  		array('class' => 'modal-close blue-grey-text tooltipped', 'data-position' => 'top', 'data-tooltip' => 'Close', 'escape' => false));
-				?>
-			</h4></div>
-		</div>
-		<?php if($this->Session->check('Auth.User')){ 
-				
-			
-			
-			  } 
-			  else { 
-				echo $this->Form->create('User', array('url' => array('controller' => 'Users',	'action' => 'login')));
-	        ?>
-	        	<br><br>
-	        	
-	            <div class="row"><div class="col s6"><?php echo $this->Form->input('username'); ?></div>
-	        	<div class="col s6"><?php echo $this->Form->input('password'); ?></div></div>
-	        	<div class="row">
-	       		<?php 
-	   		 	echo $this->Form->end(array('label' => 'Login', 'class' => 'btn blue-grey darken-2 right')); 
-	   		 	echo $this->Form->button('Cancel', array('class' => 'btn modal-close  blue-grey darken-2 right'));
-			  } ?>
-			  </div>
-		</div>
-	</div>
-	
-	
-	
-	
-  </body>
+    <!-- admin Modal -->
+	<?php 
+		if(!$this->Session->check('Auth.User')) {
+			echo $this->element('modal/admin-login-modal'); 
+		}
+		else {
+			echo $this->element('modal/admin-edit-profile');
+			echo $this->element('modal/admin-add-portfolio');
+		}
+	?>
+<!--------------------------------- 
+END	
+----------------------------------->		
+</body>
 </html>

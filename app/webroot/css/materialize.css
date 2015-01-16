@@ -5643,7 +5643,7 @@ ul.tabs li.tab {
   padding: 0 1rem;
   background-color: #fff;
   border-bottom: 1px solid #ddd; }
-  .collapsible-header i {
+/*  .collapsible-header i {
     width: 2rem;
     font-size: 1.6rem;
     line-height: 3rem;
@@ -5651,7 +5651,7 @@ ul.tabs li.tab {
     float: left;
     text-align: center;
     margin-right: 1rem; }
-
+*/
 .collapsible-body {
   overflow: hidden;
   display: none;
