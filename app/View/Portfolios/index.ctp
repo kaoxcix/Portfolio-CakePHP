@@ -1,9 +1,8 @@
 <div class="container">
-
 <div class="row">
 	<div class="col l9">
 	<?php for($i=1;$i<=9;$i++){?>
-		<div class="col s12 m12 l4">
+		<div class="col s12 m6 l4">
 			<div class="card">
 				<div class="card-image">
 				<?php echo $this->Html->image('portfolio/kaoix-site/test.png'); ?>
@@ -32,7 +31,7 @@
 			<span class="h1"><strong>My Skill</strong></span>
 			<p>	<?php $skill = explode("<br>",$profile['Profile']['skill']); 
 				foreach($skill as $skill) {?>
-				<i class="mdi-toggle-check-box"></i><?php echo $skill; ?><br>
+				<i class="mdi-toggle-check-box"></i><?php echo " ".$skill; ?><br>
 				<?php } ?>
 			</p>
 		</div> <!-- End profile -->

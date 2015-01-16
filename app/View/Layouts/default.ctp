@@ -75,6 +75,7 @@ HEADER WITH SIDE NAV FOR ALL
 				<div class="collapsible-body">
 				<ul>
 					<li><?php echo $this->html->link("<i class='mdi-action-account-box'></i>EDIT PROFILE","#admin-edit-profile",array('class' => 'modal-trigger', 'escape' => false )); ?></li>
+					<li><?php echo $this->html->link("<i class='mdi-action-account-box'></i>CHANGE PASSWORD","#admin-change-password",array('class' => 'modal-trigger', 'escape' => false )); ?></li>
 					<li><?php echo $this->html->link("<i class='mdi-action-account-box'></i>ADD PORTFOLIO","#admin-add-portfolio",array('class' => 'modal-trigger', 'escape' => false )); ?></li>
 					<li><?php echo $this->html->link("<i class='mdi-action-account-box'></i>LOG OUT", array('controller' => 'Users', 'action' => 'logout'),array('escape' => false )); ?></li>
 				</ul>
@@ -105,8 +106,9 @@ LOAD MODAL
 			echo $this->element('modal/admin-login-modal'); 
 		}
 		else {
-			echo $this->element('modal/admin-edit-profile');
 			echo $this->element('modal/admin-add-portfolio');
+			echo $this->element('modal/admin-change-password');
+			echo $this->element('modal/admin-edit-profile'); 
 		}
 	?>
 <!--------------------------------- 
