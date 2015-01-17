@@ -17,8 +17,8 @@
 				echo $this->Form->create('User', array('url' => array('controller' => 'Users', 'action' => 'change_password')));
 				echo $this->Form->input('password');
 				echo $this->Form->input('password_confirm', array('type'=>'password'));
-				echo $this->Form->end(array('label' => 'Change Password', 'class' => 'btn blue-grey darken-2 left'));
-				echo $this->Form->button('Cancel', array('class' => 'btn modal-close  blue-grey darken-2 left'));
+				echo $this->Form->button('Cancel', array('type' => 'reset', 'class' => 'btn blue-grey darken-2 right'));
+				echo $this->Form->end(array('label' => 'Change Password', 'class' => 'btn blue-grey darken-2 right'));
 				?>
 				</div>
 			</div>

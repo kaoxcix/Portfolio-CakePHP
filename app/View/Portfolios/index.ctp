@@ -1,23 +1,49 @@
 <div class="container">
 <div class="row">
 	<div class="col l9">
-	<?php for($i=1;$i<=9;$i++){?>
+	<?php 
+		foreach($portfolio as $index => $portfolio){
+		$title = $this->Text->truncate(str_replace('_',' ',$portfolio['Portfolio']['title']), 30, array('ellipsis' => '...','exact' => false));
+		$detail = str_replace('_',' ',$portfolio['Portfolio']['detail']);
+		$cover = 'portfolio/'.$portfolio['Portfolio']['title'].'/image02.jpg'; 
+	?>
+	    
+        <div class="col s12 m6 l4">
+          <div class="card">
+            <div class="card-image">
+              <?php echo $this->Html->image($cover); ?>
+              <span class="card-title"><?php echo $title; ?></span>
+            </div>
+            <div class="card-content">
+              <p><?php echo $detail; ?></p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+      
+	<!-- 
 		<div class="col s12 m6 l4">
 			<div class="card">
 				<div class="card-image">
-				<?php echo $this->Html->image('portfolio/kaoix-site/test.png'); ?>
+				<?php echo $this->Html->image($cover); ?>
 				</div>
 				<div class="card-content">
-				<div class="card-title activator grey-text text-darken-4">Card Title<i class="mdi-navigation-more-vert right"></i></div>
-				<p><a href="#">This is a link</a></p>
+				<div class="card-title activator grey-text text-darken-4">
+					<?php echo $title; ?>
+					<i class="mdi-navigation-more-vert right"></i></div>
+				<p><a href="#" class="test">More image</a></p>
 				</div>
 				<div class="card-reveal">
-				<span class="card-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
-				<p>Here is some more information about this product that is only revealed once clicked on.</p>
+				<span class="card-title grey-text text-darken-4"><?php echo $title; ?><i class="mdi-navigation-close right"></i></span>
+				<p><?php echo $portfolio['Portfolio']['detail']; ?></p>
 				</div>
 			</div>
 		</div>
-<?php } ?>
+	-->
+	<?php } ?>
+	
 	</div> <!-- End col l9 portfolio card -->
 
 	<div class="col l3 hide-on-med-and-down">
@@ -36,6 +62,9 @@
 			</p>
 		</div> <!-- End profile -->
 	</div> <!-- End col l3  -->
+	<?php 
+	$this->Js->get('.test')->event('click', 'alert("whoa!");');
+	?>
 </div> <!-- End row -->
 </div> <!-- End container -->
 

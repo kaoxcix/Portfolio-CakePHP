@@ -47,7 +47,7 @@ $siteDescription = "NINEKAO.COM | My Portfolio and Profile";
 HEADER WITH TOP NAV FOR MOBILE
 ----------------------------------->
     <header>
-      <nav class="hide-on-med-and-up">
+      <nav class="hide-on-large-only">
           <div class="nav-wrapper">
           	<a href="#" class="brand-logo">NINE<strong>KAO</strong></a>
           	<a class="button-collapse" href="#" data-activates="nav-mobile"><i class="mdi-navigation-menu"></i></a>
@@ -57,11 +57,11 @@ HEADER WITH TOP NAV FOR MOBILE
 HEADER WITH SIDE NAV FOR ALL
 ----------------------------------->	
       <ul id="nav-mobile" class="side-nav fixed">
-        <li class="logo valign-wrapper">
+        <li class="logo">
         	NINE<strong>KAO</strong>
         </li>
-        <div class="profile-image hide-on-small-only">
-			<?php echo $this->Html->image('profile/avartar.png'); ?>
+        <div class="profile-image hide-on-med-and-down">
+			<?php echo $this->Html->image('profile/avatar.jpg'); ?>
 		</div>
         <li><?php echo $this->html->link("<i class='mdi-action-account-box'></i>PORTFOLIO","/",array('escape' => false )); ?></li>
         <li><?php echo $this->html->link("<i class='mdi-action-account-box'></i>CONTACT ME","#contact-me",array('class' => 'modal-trigger', 'escape' => false )); ?></li>
@@ -114,5 +114,6 @@ LOAD MODAL
 <!--------------------------------- 
 END	
 ----------------------------------->		
+<?php echo $this->Js->writeBuffer(); ?>
 </body>
 </html>

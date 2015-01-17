@@ -8,7 +8,7 @@
 		</div>
 		<!-- body -->	
 			<?php 
-				echo $this->Form->create('contact');
+				echo $this->Form->create('Contact');
 	        ?>
 	        <div class="row">
       		<div class="col s4"><?php echo $this->Form->input('name'); ?></div>
@@ -17,12 +17,12 @@
 	        </div>
 	        
 	        <div class="row">
-      		<div class="col s12"><?php echo $this->Form->input('message',array('rows' => '5')); ?></div>
+      		<div class="col s12"><?php echo $this->Form->input('message',array('type' => 'textarea', 'class' => 'materialize-textarea')); ?></div>
       		</div>
       		<div class="row">
 	        <?php 
-	   		 	echo $this->Form->end(array('label' => 'Send', 'class' => 'btn modal-close  blue-grey darken-2 left')); 
-	   		 	echo $this->Form->button('Cancel', array('class' => 'btn modal-close  blue-grey darken-2 left'));
+	        	echo $this->Form->button('Cancel', array('type' => 'reset', 'class' => 'btn blue-grey darken-2 right'));
+	   		 	echo $this->Form->end(array('label' => 'Send', 'class' => 'btn blue-grey darken-2 right')); 
    		 	?>
    		 	</div>
 		</div>
