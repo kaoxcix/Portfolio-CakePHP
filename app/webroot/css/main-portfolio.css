@@ -1,5 +1,6 @@
 body {
   background-color: #D5DEE7; 
+
 }
 /*******************************************************
 HEADER
@@ -58,13 +59,13 @@ header #nav-mobile a, .collapsible-header {
 MAIN
 ********************************************************/
 main {
-	padding-top: 48px;
+	padding-top: 24px;
 	padding-left: 200px;
 }
-@media only screen and (max-width : 600px) {
+@media only screen and (max-width : 992px) {
 	main {
 		padding-left: 0px; 
-		padding-top: 64px;}
+		padding-top: 12px;}
 	main .container {
 		padding: 0px;
 		width: 95%; }
@@ -79,18 +80,57 @@ main .card {
 main .card .card-image {
 	height: 250px;
 }
+.card .card-image img {
+	max-height: 200%;
+	max-width: 200%;
+}
 main .card .card-title {
-	width :100%;
-	background-color: black;
+	/*width :100%;
+	*background-color: #344563;
 	line-height:15px;
-	opacity: 0.8;
+	opacity: 0.94;*/
 }
 main .card .card-content{
-	height: 100px;
-	margin-bottom:10px;
-	overflow:hidden;
-    text-overflow:ellipsis;
-	
+	height: 150px;
+	overflow: hidden;
+    text-overflow: ellipsis;
+}
+main .card .card-reveal {
+	width: 100%;
+}
+main .card-action a{
+	color: #455A64;
+	font-weight: 500;
+	font-size: 1.1rem;
+}
+main .card-action a:hover{
+	color: #768db8;
+}
+main .card .readmore{
+	font-weight: 500;
+	font-size: 0.9rem;
+	color: #455A64;
+}
+main .card .readmore:hover{
+	color: #768db8;
+}
+ .card .card-content .card-title {
+    line-height: 36px; }
+main .card .delele {
+	position: absolute;
+	top: 0;
+	right: 0px;
+	padding-right: 12px;
+	font-size: 2.2rem;
+	width: 100%;
+	z-index:1;
+	color: white;
+	background-color: #000;
+	opacity:0.7;
+}
+
+.card-reveal {
+	z-index: 3;
 }
 main .profile {
 	margin-top: 30px;
@@ -154,16 +194,21 @@ COMPONENT
 .my-modal-dialog  h1, .modal h2, .modal h3, .modal h4 {
     margin-top: 0; 
 }
-.my-modal-dialog img {
+#admin-edit-profile .my-modal-dialog img {
 	width: 100%;
 	border: 5px solid #455A64;
 }
 .admin-modal {
 	width: 550px;
 }
+.addport-modal {
+	width: 550px;
+}
 .upload-image-profile {
 	max-width: 100%;
-	width: 200px;
+	display : block;
+	margin-top: 5px;
+	margin-bottom: 10px;
 }
 .left {
 	float: left;
@@ -179,8 +224,12 @@ COMPONENT
 }
 .textCenter {
 	text-align: center;
-	}
-
-
-
-
+}
+.mfp-bg {
+  opacity: 0.95 !important;
+  filter: alpha(opacity=95) !important; 
+}
+.thumbnail {
+	height: 100px;
+	border: 2px solid #F2F6F9;
+}

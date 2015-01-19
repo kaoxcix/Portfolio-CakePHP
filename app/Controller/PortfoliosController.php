@@ -1,57 +1,48 @@
 <?php
 class PortfoliosController extends AppController {
-	var $ModelProfile = 'Profile';
-	
+
 	public function index() {
-		$this->loadModel($this->ModelProfile);
-		$profile = $this->Profile->find('first');
+		//fetch profile data
+		$this->loadModel('Profile');
+		$profile = $this->Profile->findById(1);
 		$this->set('profile', $profile);
 		
+		//fetch portfolio to card
 		$portfolio = $this->Portfolio->find('all');
 		$this->set('portfolio', $portfolio);
 	}
-	public function edit_profile() {
-		$this->loadModel($this->ModelProfile);
-		if ($this->request->is(array('post', 'put'))) {
-			$this->request->data['Profile']['name'] = trim($this->request->data['Profile']['name']);
-			$this->request->data['Profile']['intro'] = str_replace(PHP_EOL, '<br>', $this->request->data['Profile']['intro']);
-			$this->request->data['Profile']['skill'] = str_replace(PHP_EOL, '<br>', $this->request->data['Profile']['skill']);
-			$this->Profile->id = 1;
-			if ($this->Profile->save($this->request->data)) {
-				$message = 'Your profile has been updated';
+
+	public function add() {
+		if ($this->request->is('post')) {
+			$this->request->data['Portfolio']['title'] = str_replace(' ', '_', $this->request->data['Portfolio']['title']);
+			$this->request->data['Portfolio']['example'] = count($this->request->data['Portfolio']['image']);
+			$this->Portfolio->create();
+			if ($this->Portfolio->save($this->request->data)) {
+				$id = $this->Portfolio->getLastInsertId();
+				if(!empty($this->request->data['Portfolio']['image'][0]['name']))
+				{
+					$file = $this->request->data['Portfolio']['image'];
+					if(mkdir(WWW_ROOT .'img/portfolio/'.$id, 0755)){
+						foreach($file as $index => $file){
+							move_uploaded_file($file['tmp_name'], WWW_ROOT .'img/portfolio/'.$id.'/image'.($index+1).'.jpg');
+						}
+					}
+				}
+				$message = 'Your portfolio has been added';
 			}
 			else {
-				$message = 'Unable to update your profile';
+				$message = 'Unable to add your portfolio';
 			}
-			
-			if(!empty($this->request->data['Profile']['avatar']['name']))
-			{	
-				$file = $this->request->data['Profile']['avatar']; //put the data into a var for easy use
-			
-				$ext = substr(strtolower(strrchr($file['name'], '.')), 1); //get the extension
-				$arr_ext = array('jpg', 'jpeg'); //set allowed extensions
-				$dimen = getimagesize($file['tmp_name']);
-				
-				
-				//check if extension&dimension are valid
-				if(in_array($ext, $arr_ext) && $dimen[0] <= 300 && $dimen[1] <= 300)
-				{
-					move_uploaded_file($file['tmp_name'], WWW_ROOT . 'img/profile/' . 'avatar.jpg');
-				}
-				else {
-					$message = 'Unable to update your avatar';
-				}
-			}
-		$this->Session->setFlash($message);
-		$this->redirect(array('controller'=>'Portfolios' , 'action' => 'index'));
+			$this->Session->setFlash($message);
+			$this->redirect(array('controller'=>'Portfolios' , 'action' => 'index'));
 		}
-		
-		$profile = $this->Profile->find('first');
-		$profile['Profile']['intro'] = str_replace('<br>', PHP_EOL, $profile['Profile']['intro']);
-		$profile['Profile']['skill'] = str_replace('<br>', PHP_EOL, $profile['Profile']['skill']);
-		return $profile;
 	}
 	
-	
-	
+	public function delete($id) {
+		$portfolio = $this->Portfolio->findById($id);
+		if ($this->Portfolio->delete($id)) {
+			$this->Session->setFlash('"'.$portfolio['Portfolio']['title'].'" has been deleted.');
+		}
+		$this->redirect(array('controller'=>'Portfolios' , 'action' => 'index'));
+	}
 }

@@ -32,10 +32,12 @@ $siteDescription = "NINEKAO.COM | My Portfolio and Profile";
 
 		echo $this->Html->css('materialize');
 		echo $this->Html->css('main-portfolio');
+		echo $this->Html->css('magnific-popup');
 		echo $this->Html->script('jquery-1.11.2.js');
 		echo $this->Html->script('materialize.js');
 		echo $this->Html->script('main-portfolio.js');
 		echo $this->Html->script('simple-typing-carousel.js');
+		echo $this->Html->script('jquery.magnific-popup.js');
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
@@ -61,7 +63,7 @@ HEADER WITH SIDE NAV FOR ALL
         	NINE<strong>KAO</strong>
         </li>
         <div class="profile-image hide-on-med-and-down">
-			<?php echo $this->Html->image('profile/avatar.jpg'); ?>
+			<?php echo $this->Html->image('profile/avatar.gif?'.time()); ?>
 		</div>
         <li><?php echo $this->html->link("<i class='mdi-action-account-box'></i>PORTFOLIO","/",array('escape' => false )); ?></li>
         <li><?php echo $this->html->link("<i class='mdi-action-account-box'></i>CONTACT ME","#contact-me",array('class' => 'modal-trigger', 'escape' => false )); ?></li>
@@ -113,7 +115,6 @@ LOAD MODAL
 	?>
 <!--------------------------------- 
 END	
------------------------------------>		
-<?php echo $this->Js->writeBuffer(); ?>
+----------------------------------->
 </body>
 </html>

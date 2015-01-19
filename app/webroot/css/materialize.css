@@ -5166,7 +5166,7 @@ small {
       right: 0;
       top: 0;
       bottom: 0;
-      width: 100%; }
+      }
     .card .card-image .card-title {
       position: absolute;
       bottom: 0;
@@ -6341,7 +6341,7 @@ ul.side-nav.fixed {
     right: 0;
     left: auto; }
 /*mycustom*/
-@media only screen and (max-width : 600px) {
+@media only screen and (max-width : 992px) {
   ul.side-nav.fixed {
     left: -250px; }
     ul.side-nav.fixed.right-aligned {
