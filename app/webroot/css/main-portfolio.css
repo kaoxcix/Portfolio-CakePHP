@@ -128,7 +128,7 @@ main .card .card-reveal {
 }
 main .card .card-reveal .overflow{
 	height: 92%;
-	overflow-y: scroll;
+	overflow-y: auto;
 }
 main .profile {
 	margin-top: 30px;

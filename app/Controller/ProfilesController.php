@@ -1,5 +1,10 @@
 <?php
 class ProfilesController extends AppController {
+	public function beforeFilter() {
+		parent::beforeFilter();
+		$this->Auth->deny('edit');
+	}
+	
 	
 	public function edit() {
 		if ($this->request->is(array('post', 'put'))) {

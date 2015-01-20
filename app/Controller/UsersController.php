@@ -1,8 +1,10 @@
 <?php
-App::uses('AppController', 'Controller');
-
 class UsersController extends AppController {
-
+	public function beforeFilter() {
+		parent::beforeFilter();
+		$this->Auth->deny('change_password');
+	}
+	
 	public function login() {
 	    if ($this->request->is('post')) {
 	        if ($this->Auth->login()) {

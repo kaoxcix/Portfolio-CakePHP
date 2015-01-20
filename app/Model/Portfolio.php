@@ -16,12 +16,9 @@ class Portfolio extends AppModel {
 			'image' => array(
 	        		'extension' => array(
 	        				'rule' => array('extension',array('jpeg', 'jpg')),
-	       					'message' => 'Please supply a valid image.'
-	        		),
-					'require' => array(
-							'rule' => array('notEmpty'),
-							'message' => 'Detail is required'
-					)
+	       					'message' => 'Please supply a valid image.',
+	        				'allowEmpty' => false
+	        		)
 			)
 	);
 }

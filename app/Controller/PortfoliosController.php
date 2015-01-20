@@ -1,6 +1,15 @@
 <?php
+App::uses('Folder', 'Utility');
+App::uses('File', 'Utility');
+App::uses('AppController','Controller');
 class PortfoliosController extends AppController {
 
+	public function beforeFilter() {
+		parent::beforeFilter();
+		$this->Auth->deny('add', 'delete');
+	}
+	 
+	
 	public function index() {
 		//fetch profile data
 		$this->loadModel('Profile');
@@ -22,7 +31,8 @@ class PortfoliosController extends AppController {
 				if(!empty($this->request->data['Portfolio']['image'][0]['name']))
 				{
 					$file = $this->request->data['Portfolio']['image'];
-					if(mkdir(WWW_ROOT .'img/portfolio/'.$id, 0755)){
+					$folder = new Folder();
+					if($folder->create(WWW_ROOT .'img/portfolio/'.$id, true, 0755)){
 						foreach($file as $index => $file){
 							move_uploaded_file($file['tmp_name'], WWW_ROOT .'img/portfolio/'.$id.'/image'.($index+1).'.jpg');
 						}
@@ -40,7 +50,12 @@ class PortfoliosController extends AppController {
 	
 	public function delete($id) {
 		$portfolio = $this->Portfolio->findById($id);
+		$count = $portfolio['Portfolio']['example'];
 		if ($this->Portfolio->delete($id)) {
+			for($i=1;$i<=$count;$i++){
+				unlink(WWW_ROOT .'img/portfolio/'.$id.'/image'.$i.'.jpg');
+			}
+			rmdir(WWW_ROOT .'img/portfolio/'.$id);
 			$this->Session->setFlash('"'.$portfolio['Portfolio']['title'].'" has been deleted.');
 		}
 		$this->redirect(array('controller'=>'Portfolios' , 'action' => 'index'));

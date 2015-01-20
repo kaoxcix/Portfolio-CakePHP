@@ -17,6 +17,14 @@
 $siteDescription = "NINEKAO.COM | My Portfolio and Profile";
 
 ?>
+<!-- 
+THIS SITE USE:
+- CAKEPHP [MIT] : http://cakephp.org
+- MATERIALIZE CSS [MIT] : http://materializecss.com/
+- MAGINIFIC POPUP [MIT] : http://dimsemenov.com/plugins/magnific-popup/
+- SIMPLE TYPING CAROUSEL [MIT] : https://gist.github.com/gschier/6903476
+- JQUERY [MIT] : http://jquery.com/
+-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,7 +34,8 @@ $siteDescription = "NINEKAO.COM | My Portfolio and Profile";
 		<?php //echo $this->fetch('title'); ?>
 	</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="description" content="NINEKAO.COM My Portfolio and Profile">
+	<meta name="keywords" content="ninekao,portfolio,profile"/>
 	<?php
 		echo $this->Html->meta('icon');
 
