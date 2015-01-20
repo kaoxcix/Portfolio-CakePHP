@@ -16,8 +16,8 @@
 				<div class="card-image">
 					<?php if($this->Session->check('Auth.User')) { ?>
 					<div class="delele">
-						<?php echo $this->Html->link('<i class="mdi-action-delete right"></i>', array('controller' => 'Portfolios', 'action' => 'delete',$card_id)  , array('escape' => false)); ?>
-						<?php echo $this->Html->link('<i class="mdi-editor-mode-edit right"></i>', '#' , array('escape' => false)); ?>
+						<?php echo $this->Html->link('<i class="mdi-action-delete right"></i>', array('controller' => 'Portfolios', 'action' => 'delete',$card_id)  , array('escape' => false, 'confirm' => "Are you sure ?")); ?>
+						<?php // echo $this->Html->link('<i class="mdi-editor-mode-edit right"></i>', '#' , array('escape' => false)); ?>
 					</div>
 					<?php } ?>
 					<?php echo $this->Html->image($card_cover); ?>
@@ -42,8 +42,8 @@
 	            	
 				</div>
 				<div class="card-reveal">
-					<span class="card-title grey-text text-darken-4"><?php echo $card_title; ?> <i class="mdi-navigation-close right"></i></span>
-					<p><?php echo $card_detail; ?></p>
+					<span class="card-title grey-text text-darken-4 close"><?php echo $card_title; ?> <i class="mdi-navigation-close right"></i></span>
+					<div class="overflow"><?php echo $card_detail; ?></div>
 				</div>
 			</div>
         </div>

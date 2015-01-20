@@ -11,7 +11,6 @@ $( document ).ready(function(){
 		  }
 	  });
 	  $('.modal-trigger').leanModal();
-	  //$(this).attr("card_url")
 	  $('.port-gallery').each(function() {
 		    $(this).magnificPopup({
 		        delegate: 'a',

@@ -63,7 +63,7 @@ HEADER WITH SIDE NAV FOR ALL
         	NINE<strong>KAO</strong>
         </li>
         <div class="profile-image hide-on-med-and-down">
-			<?php echo $this->Html->image('profile/avatar.gif?'.time()); ?>
+			<?php echo $this->Html->image('profile/avatar.jpg?'.time()); ?>
 		</div>
         <li><?php echo $this->html->link("<i class='mdi-action-account-box'></i>PORTFOLIO","/",array('escape' => false )); ?></li>
         <li><?php echo $this->html->link("<i class='mdi-action-account-box'></i>CONTACT ME","#contact-me",array('class' => 'modal-trigger', 'escape' => false )); ?></li>

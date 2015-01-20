@@ -84,12 +84,6 @@ main .card .card-image {
 	max-height: 200%;
 	max-width: 200%;
 }
-main .card .card-title {
-	/*width :100%;
-	*background-color: #344563;
-	line-height:15px;
-	opacity: 0.94;*/
-}
 main .card .card-content{
 	height: 150px;
 	overflow: hidden;
@@ -114,8 +108,9 @@ main .card .readmore{
 main .card .readmore:hover{
 	color: #768db8;
 }
- .card .card-content .card-title {
-    line-height: 36px; }
+main .card .card-content .card-title {
+    line-height: 36px; 
+}
 main .card .delele {
 	position: absolute;
 	top: 0;
@@ -123,14 +118,17 @@ main .card .delele {
 	padding-right: 12px;
 	font-size: 2.2rem;
 	width: 100%;
-	z-index:1;
+	z-index: 1;
 	color: white;
 	background-color: #000;
-	opacity:0.7;
+	opacity: 0.7;
 }
-
-.card-reveal {
+main .card .card-reveal {
 	z-index: 3;
+}
+main .card .card-reveal .overflow{
+	height: 92%;
+	overflow-y: scroll;
 }
 main .profile {
 	margin-top: 30px;
@@ -165,9 +163,9 @@ COMPONENT
 }
 .my-modal-dialog {
     padding: 10px 24px;
- 	max-height: 85%;
+ 	max-height: 90%;
   	max-width: 55%;
-    margin: 30px auto;
+    margin: 0px auto;
     background-color: #eee;
     overflow-y: auto;
   	z-index: 1002;
@@ -204,6 +202,9 @@ COMPONENT
 .addport-modal {
 	width: 550px;
 }
+.contactme-modal {
+	width: 500px;
+}
 .upload-image-profile {
 	max-width: 100%;
 	display : block;
@@ -225,11 +226,14 @@ COMPONENT
 .textCenter {
 	text-align: center;
 }
+.pLeft {
+	padding: 0px !important;
+	padding-right: 10px !important;
+}
 .mfp-bg {
   opacity: 0.95 !important;
   filter: alpha(opacity=95) !important; 
 }
-.thumbnail {
-	height: 100px;
-	border: 2px solid #F2F6F9;
+.input-field .prefix.active {
+color: #455A64;
 }
