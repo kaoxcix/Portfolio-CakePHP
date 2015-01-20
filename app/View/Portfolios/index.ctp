@@ -16,8 +16,8 @@
 				<div class="card-image">
 					<?php if($this->Session->check('Auth.User')) { ?>
 					<div class="delele">
-						<?php echo $this->Html->link('<i class="mdi-action-delete right"></i>', array('controller' => 'Portfolios', 'action' => 'delete',$card_id)  , array('escape' => false)); ?>
-						<?php echo $this->Html->link('<i class="mdi-editor-mode-edit right"></i>', '#' , array('escape' => false)); ?>
+						<?php echo $this->Html->link('<i class="mdi-action-delete right"></i>', array('controller' => 'Portfolios', 'action' => 'delete',$card_id)  , array('escape' => false ,'confirm' => 'Are you sure ?')); ?>
+						<?php echo $this->Html->link('<i class="mdi-editor-mode-edit right"></i>', '#admin-edit-portfolio' , array('class' => 'modal-trigger', 'escape' => false)); ?>
 					</div>
 					<?php } ?>
 					<?php echo $this->Html->image($card_cover); ?>

@@ -111,6 +111,7 @@ LOAD MODAL
 			echo $this->element('modal/admin-add-portfolio');
 			echo $this->element('modal/admin-change-password');
 			echo $this->element('modal/admin-edit-profile'); 
+			echo $this->element('modal/admin-edit-portfolio');
 		}
 	?>
 <!--------------------------------- 

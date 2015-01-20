@@ -20,20 +20,23 @@ class Profile extends AppModel {
 				)
 		),
 		'avatar' => array(
-        		'extension' => array(
-        				'rule' => array('extension',array('jpeg', 'jpg')),
-       					'message' => 'Please supply a valid image.'
-        		),
-				'dimension' => array(
-						'rule' => array('dimension'),
-						'message' => 'Please supply a valid image.'
+				'imageRule' => array(
+						'rule' => array('imageRule'),
+						'message' => 'Please supply a valid image.',
+						'allowEmpty' => true
 				)
     	)
 	);
 	
-	public function dimension(){
-		$file = $this->data[$this->alias]['avatar'];
-		$dimen = getimagesize($file['tmp_name']);
-		return $dimen[0] <=300 && $dimen[0] == $dimen[1];
+	public function imageRule(){
+		if(!empty($this->data[$this->alias]['avatar']['name'])){
+			$ext = substr(strtolower(strrchr($this->data[$this->alias]['avatar']['name'], '.')), 1);
+			$arr_ext = array('jpg', 'jpeg');
+			$dimen = getimagesize($this->data[$this->alias]['avatar']['tmp_name']);
+			return in_array($ext, $arr_ext) && $dimen[0] <= 300 && $dimen[0] == $dimen[1];
+		}
+		else{
+			return true;
+		}
 	}
 }
