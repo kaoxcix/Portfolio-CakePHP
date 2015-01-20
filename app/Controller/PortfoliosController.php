@@ -31,8 +31,7 @@ class PortfoliosController extends AppController {
 				if(!empty($this->request->data['Portfolio']['image'][0]['name']))
 				{
 					$file = $this->request->data['Portfolio']['image'];
-					$folder = new Folder();
-					if($folder->create(WWW_ROOT .'img/portfolio/'.$id, true, 0755)){
+					if(mkdir(WWW_ROOT .'img/portfolio/'.$id, 0777)){
 						foreach($file as $index => $file){
 							move_uploaded_file($file['tmp_name'], WWW_ROOT .'img/portfolio/'.$id.'/image'.($index+1).'.jpg');
 						}

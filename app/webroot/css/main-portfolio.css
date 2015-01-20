@@ -26,6 +26,8 @@ header #nav-mobile .logo {
 	background-color: #F2F6F9;
 	font-size: 2rem;
     font-weight: 300;
+    text-align: center;
+    padding-top: 90px;
 }
 header #nav-mobile .logo h1 {
     font-size: 2rem;
