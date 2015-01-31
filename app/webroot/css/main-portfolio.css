@@ -61,12 +61,14 @@ header #nav-mobile a, .collapsible-header {
 MAIN
 ********************************************************/
 main {
-	padding-top: 24px;
-	padding-left: 200px;
+	padding-top: 52px;
+	margin-left: 240px;
+}
+main .container {
 }
 @media only screen and (max-width : 992px) {
 	main {
-		padding-left: 0px; 
+		margin-left: 0px; 
 		padding-top: 12px;}
 	main .container {
 		padding: 0px;
@@ -82,12 +84,16 @@ main .card {
 main .card .card-image {
 	height: 250px;
 }
+@media only screen and (max-width : 992px) {
+	main .card .card-image {
+		height: 200px; }
+}
 .card .card-image img {
 	max-height: 200%;
 	max-width: 200%;
 }
 main .card .card-content{
-	height: 150px;
+	height: 200px;
 	overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -131,6 +137,11 @@ main .card .card-reveal {
 main .card .card-reveal .overflow{
 	height: 92%;
 	overflow-y: auto;
+}
+main .card .card-close {
+	position: absolute;
+	top:2px; 
+	right:2px
 }
 main .profile {
 	margin-top: 30px;
@@ -213,6 +224,12 @@ COMPONENT
 	margin-top: 5px;
 	margin-bottom: 10px;
 }
+.hide{
+	display: none;
+}
+.clear {
+	clear: both;
+}
 .left {
 	float: left;
 }
@@ -228,14 +245,14 @@ COMPONENT
 .textCenter {
 	text-align: center;
 }
-.pLeft {
+.pLeft { /* Profile model */
 	padding: 0px !important;
 	padding-right: 10px !important;
 }
-.mfp-bg {
+.mfp-bg { /* Gallery overlay */
   opacity: 0.95 !important;
   filter: alpha(opacity=95) !important; 
 }
-.input-field .prefix.active {
+.input-field .prefix.active { /* Contact me color*/
 color: #455A64;
 }

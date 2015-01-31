@@ -34,6 +34,7 @@ THIS SITE USE:
 		<?php //echo $this->fetch('title'); ?>
 	</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="NINEKAO.COM My Portfolio and Profile">
 	<meta name="keywords" content="ninekao,portfolio,profile"/>
 	<?php
@@ -74,21 +75,21 @@ HEADER WITH SIDE NAV FOR ALL
         <div class="profile-image hide-on-med-and-down">
 			<?php echo $this->Html->image('profile/avatar.jpg?'.time()); ?>
 		</div>
-        <li><?php echo $this->html->link("<i class='mdi-action-account-box'></i>PORTFOLIO","/",array('escape' => false )); ?></li>
+        <li><?php echo $this->html->link("<i class='mdi-action-assignment'></i>PORTFOLIO","/",array('escape' => false )); ?></li>
         <li><?php echo $this->html->link("<i class='mdi-action-account-box'></i>CONTACT ME","#contact-me",array('class' => 'modal-trigger', 'escape' => false )); ?></li>
         <?php if(!$this->Session->check('Auth.User')) { ?>
-        	<li><?php echo $this->html->link("<i class='mdi-action-account-box'></i>ADMIN ZONE","#admin-login",array('class' => 'modal-trigger', 'escape' => false )); ?></li>
+        	<li><?php echo $this->html->link("<i class='mdi-action-settings-applications'></i>ADMIN ZONE","#admin-login",array('class' => 'modal-trigger', 'escape' => false )); ?></li>
         <?php } else { ?>
         <li class="no-padding">
 	        <ul class="collapsible collapsible-accordion">
 				<li>
-				<div class="collapsible-header"></i><i class='mdi-action-account-box'></i>ADMIN ZONE<i class="mdi-navigation-arrow-drop-down"></i></div>
+				<div class="collapsible-header"></i><i class='mdi-action-settings-applications'></i>ADMIN ZONE<i class="mdi-navigation-arrow-drop-down"></i></div>
 				<div class="collapsible-body">
 				<ul>
 					<li><?php echo $this->html->link("<i class='mdi-action-account-box'></i>EDIT PROFILE","#admin-edit-profile",array('class' => 'modal-trigger', 'escape' => false )); ?></li>
-					<li><?php echo $this->html->link("<i class='mdi-action-account-box'></i>CHANGE PASSWORD","#admin-change-password",array('class' => 'modal-trigger', 'escape' => false )); ?></li>
-					<li><?php echo $this->html->link("<i class='mdi-action-account-box'></i>ADD PORTFOLIO","#admin-add-portfolio",array('class' => 'modal-trigger', 'escape' => false )); ?></li>
-					<li><?php echo $this->html->link("<i class='mdi-action-account-box'></i>LOG OUT", array('controller' => 'Users', 'action' => 'logout'),array('escape' => false )); ?></li>
+					<li><?php echo $this->html->link("<i class='mdi-hardware-security'></i>CHANGE PASSWORD","#admin-change-password",array('class' => 'modal-trigger', 'escape' => false )); ?></li>
+					<li><?php echo $this->html->link("<i class='mdi-action-assignment'></i>ADD PORTFOLIO","#admin-add-portfolio",array('class' => 'modal-trigger', 'escape' => false )); ?></li>
+					<li><?php echo $this->html->link("<i class='mdi-action-exit-to-app'></i>LOG OUT", array('controller' => 'Users', 'action' => 'logout'),array('escape' => false )); ?></li>
 				</ul>
 				</div>
 				</li>

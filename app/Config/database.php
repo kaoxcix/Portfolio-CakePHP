@@ -72,9 +72,9 @@ class DATABASE_CONFIG {
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => 'localhost',
-		'login' => 'root',
-		'password' => '',
-		'database' => 'portfolio',
+		'login' => 'ninekaoc_us',
+		'password' => 'P9Ozx1ri36',
+		'database' => 'ninekaoc_port',
 		'prefix' => '',
 		'encoding' => 'utf8',
 	);

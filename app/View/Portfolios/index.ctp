@@ -4,7 +4,7 @@
 	<?php 
 		foreach($portfolio as $index => $portfolio){
 		$card_id = $portfolio['Portfolio']['id'];
-		$card_title = $this->Text->truncate(str_replace('_',' ',$portfolio['Portfolio']['title']), 20, array('ellipsis' => '...'));
+		$card_title = $this->Text->truncate(str_replace('_',' ',$portfolio['Portfolio']['title']), 35, array('ellipsis' => '...'));
 		$card_detail = $portfolio['Portfolio']['detail'];
 		$card_detail_tc = $this->Text->truncate($portfolio['Portfolio']['detail'], 100, array('ellipsis' => '...','exact' => false));
 		$card_cover = 'portfolio/'.$card_id.'/image1.jpg'; 
@@ -23,7 +23,7 @@
 					<?php echo $this->Html->image($card_cover); ?>
 				</div>
 				<div class="card-content">
-					<span class="card-title activator grey-text text-darken-4"><?php echo $card_title; ?> <i class="mdi-navigation-more-vert right"></i></span>
+					<span class="card-title activator grey-text text-darken-4"><?php echo $card_title; ?> <!-- <i class="mdi-navigation-more-vert right"></i>  --></span>
 					<p><?php echo $this->Text->truncate(strip_tags($portfolio['Portfolio']['detail']).'', 150, array('ellipsis' => '...<br><span class="card-title activator readmore">READ MORE</span>','exact' => false)); ?></p>
 					
 				</div>
@@ -35,18 +35,20 @@
 	            		for($i=1;$i<=$card_example;$i++) {
 		            		$image_url = $card_id.'/image'.$i.'.jpg';
 		           			if($i == 1){echo $this->Html->link('GALLERY', '/img/portfolio/'.$image_url , array('escape' => false));}
-		           			else{echo $this->Html->link('', '/img/portfolio/'.$image_url , array('escape' => false));}
+		           			else{echo $this->Html->link('', '/img/portfolio/'.$image_url , array('class' => 'hide'));}
 	            		}
 	            	?>
 	            	</span>
 	            	
 				</div>
 				<div class="card-reveal">
-					<span class="card-title grey-text text-darken-4 close"><?php echo $card_title; ?> <i class="mdi-navigation-close right"></i></span>
+					<span class="card-title grey-text text-darken-4 close"><?php echo $card_title; ?> <i class="mdi-navigation-close card-close"></i></span>
 					<div class="overflow"><?php echo $card_detail; ?></div>
 				</div>
 			</div>
+			
         </div>
+        <?php if($index%2!=0){ ?><div class="clear"></div><?php } ?>
 	<?php } ?>
 	
 	</div> <!-- End col l9 portfolio card -->

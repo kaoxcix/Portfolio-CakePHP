@@ -17,7 +17,7 @@ class PortfoliosController extends AppController {
 		$this->set('profile', $profile);
 		
 		//fetch portfolio to card
-		$portfolio = $this->Portfolio->find('all');
+		$portfolio = $this->Portfolio->find('all', array('order' => array('Portfolio.id' => 'desc')));
 		$this->set('portfolio', $portfolio);
 	}
 
@@ -25,6 +25,7 @@ class PortfoliosController extends AppController {
 		if ($this->request->is('post')) {
 			$this->request->data['Portfolio']['title'] = str_replace(' ', '_', $this->request->data['Portfolio']['title']);
 			$this->request->data['Portfolio']['example'] = count($this->request->data['Portfolio']['image']);
+			$this->request->data['Portfolio']['detail'] = str_replace(PHP_EOL, '<br>', $this->request->data['Portfolio']['detail']);
 			$this->Portfolio->create();
 			if ($this->Portfolio->save($this->request->data)) {
 				$id = $this->Portfolio->getLastInsertId();
