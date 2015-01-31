@@ -17,7 +17,7 @@ class PortfoliosController extends AppController {
 		$this->set('profile', $profile);
 		
 		//fetch portfolio to card
-		$portfolio = $this->Portfolio->find('all', array('order' => array('Portfolio.id' => 'desc')));
+		$portfolio = $this->Portfolio->find('all', array('order' => array('Portfolio.modified' => 'desc')));
 		$this->set('portfolio', $portfolio);
 	}
 

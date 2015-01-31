@@ -115,7 +115,6 @@ main .card .readmore:hover{
 	color: #768db8;
 }
 main .card .card-content .card-title {
-
     line-height: 36px;
 }
 main .card .delele {
@@ -254,6 +253,9 @@ COMPONENT
 }
 .btn {
 	margin-left: 5px;
+}
+.cursor{
+	cursor: pointer;
 }
 .input-field .prefix.active { /* Contact me color*/
 	color: #455A64;

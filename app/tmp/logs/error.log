@@ -11068,3 +11068,44 @@ Stack Trace:
 #9 F:\Workspace PHP\workspace\portfolio-cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PortfoliosController), Object(CakeRequest))
 #10 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #11 {main}
+2015-02-01 04:37:20 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Portfolio.modified' in 'order clause'
+Request URL: /portfolio-cakephp/
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 F:\Workspace PHP\workspace\portfolio-cakephp\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Portfol...', Array)
+#2 F:\Workspace PHP\workspace\portfolio-cakephp\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Portfol...', Array, Array)
+#3 F:\Workspace PHP\workspace\portfolio-cakephp\lib\Cake\Model\Datasource\DboSource.php(1104): DboSource->fetchAll('SELECT `Portfol...', false)
+#4 F:\Workspace PHP\workspace\portfolio-cakephp\lib\Cake\Model\Model.php(3018): DboSource->read(Object(Portfolio), Array)
+#5 F:\Workspace PHP\workspace\portfolio-cakephp\lib\Cake\Model\Model.php(2990): Model->_readDataSource('all', Array)
+#6 F:\Workspace PHP\workspace\portfolio-cakephp\app\Controller\PortfoliosController.php(20): Model->find('all', Array)
+#7 [internal function]: PortfoliosController->index()
+#8 F:\Workspace PHP\workspace\portfolio-cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PortfoliosController), Array)
+#9 F:\Workspace PHP\workspace\portfolio-cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 F:\Workspace PHP\workspace\portfolio-cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PortfoliosController), Object(CakeRequest))
+#11 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-02-01 04:37:23 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Portfolio.modified' in 'order clause'
+Request URL: /portfolio-cakephp/
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 F:\Workspace PHP\workspace\portfolio-cakephp\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Portfol...', Array)
+#2 F:\Workspace PHP\workspace\portfolio-cakephp\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Portfol...', Array, Array)
+#3 F:\Workspace PHP\workspace\portfolio-cakephp\lib\Cake\Model\Datasource\DboSource.php(1104): DboSource->fetchAll('SELECT `Portfol...', false)
+#4 F:\Workspace PHP\workspace\portfolio-cakephp\lib\Cake\Model\Model.php(3018): DboSource->read(Object(Portfolio), Array)
+#5 F:\Workspace PHP\workspace\portfolio-cakephp\lib\Cake\Model\Model.php(2990): Model->_readDataSource('all', Array)
+#6 F:\Workspace PHP\workspace\portfolio-cakephp\app\Controller\PortfoliosController.php(20): Model->find('all', Array)
+#7 [internal function]: PortfoliosController->index()
+#8 F:\Workspace PHP\workspace\portfolio-cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PortfoliosController), Array)
+#9 F:\Workspace PHP\workspace\portfolio-cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 F:\Workspace PHP\workspace\portfolio-cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PortfoliosController), Object(CakeRequest))
+#11 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-02-01 04:41:03 Error: [MissingControllerException] Controller class FsdController could not be found.
+Exception Attributes: array (
+  'class' => 'FsdController',
+  'plugin' => NULL,
+)
+Request URL: /portfolio-cakephp/fsd
+Stack Trace:
+#0 F:\Workspace PHP\workspace\portfolio-cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
