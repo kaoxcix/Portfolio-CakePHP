@@ -23,7 +23,7 @@ class PortfoliosController extends AppController {
 
 	public function add() {
 		if ($this->request->is('post')) {
-			$this->request->data['Portfolio']['title'] = str_replace(' ', '_', $this->request->data['Portfolio']['title']);
+			//$this->request->data['Portfolio']['title'] = str_replace(' ', '_', $this->request->data['Portfolio']['title']);
 			$this->request->data['Portfolio']['example'] = count($this->request->data['Portfolio']['image']);
 			$this->request->data['Portfolio']['detail'] = str_replace(PHP_EOL, '<br>', $this->request->data['Portfolio']['detail']);
 			$this->Portfolio->create();
@@ -42,6 +42,21 @@ class PortfoliosController extends AppController {
 			}
 			else {
 				$message = 'Unable to add your portfolio';
+			}
+			$this->Session->setFlash($message);
+			$this->redirect(array('controller'=>'Portfolios' , 'action' => 'index'));
+		}
+	}
+	
+	public function edit() {
+		if ($this->request->is(array('post', 'put'))) {
+			$this->request->data['Portfolio']['detail'] = str_replace(PHP_EOL, '<br>', $this->request->data['Portfolio']['detail']);
+			$this->Portfolio->id = $this->request->data['Portfolio']['id'];
+			if ($this->Portfolio->save($this->request->data)) {
+				$message = 'Your portfolio has been updated';
+			}
+			else {
+				$message = 'Unable to update your portfolio';
 			}
 			$this->Session->setFlash($message);
 			$this->redirect(array('controller'=>'Portfolios' , 'action' => 'index'));

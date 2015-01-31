@@ -1,6 +1,6 @@
 $( document ).ready(function(){
 	
-	  $('.button-collapse').sideNav();
+	  $('.button-collapse').sideNav({menuWidth: 240, activationWidth: 150});
 	  $('.collapsible').collapsible();
 	  $('.tooltipped').tooltip({"delay": 10});
 	  $('.slider').slider({full_width: true});

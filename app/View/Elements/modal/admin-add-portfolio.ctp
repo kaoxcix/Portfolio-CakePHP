@@ -19,8 +19,8 @@
 				echo $this->Form->input('detail',array('type' => 'textarea', 'class' => 'materialize-textarea'));
 				echo $this->Form->input('demo',array('label' => 'Demo link'));
 				echo $this->Form->input('image.', array('label' => 'Upload images to gallery (Only JPEG file)','type' => 'file', 'multiple' => true, 'class' => 'upload-image-profile'));
-				echo $this->Form->button('Cancel', array('type' => 'reset', 'class' => 'btn blue-grey darken-2 right'));
-				echo $this->Form->end(array('label' => 'Add', 'class' => 'btn blue-grey darken-2 right'));
+				echo $this->Form->button('Cancel', array('type' => 'reset', 'class' => 'btn teal darken-3 right'));
+				echo $this->Form->end(array('label' => 'Add', 'class' => 'btn teal darken-3 right'));
 			?>
 			</div>
 			</div>

@@ -1,22 +1,22 @@
 body {
-  background-color: #D5DEE7; 
+  background-color: #e4eaef; 
 
 }
 /*******************************************************
 HEADER
 ********************************************************/
 header nav {
-	background-color: #344563;
+	background-color: #4D918E;
 	z-index:999;
 }
 header #nav-mobile, .collapsible, .collapsible-body{
-	background-color: #344563;
+	background-color: #4D918E;
 }
 header .collapsible-body ul{
-	background-color: #44597F;
+	background-color: #539d9a;
 }
 header ul.side-nav.fixed li:hover, ul.side-nav.fixed li.active { 
-	background-color: #3d5074;
+	background-color: #3a706d;
 }
 header ul.side-nav.fixed{
     overflow-y: auto; 
@@ -94,8 +94,6 @@ main .card .card-image {
 }
 main .card .card-content{
 	height: 200px;
-	overflow: hidden;
-    text-overflow: ellipsis;
 }
 main .card .card-reveal {
 	width: 100%;
@@ -117,7 +115,8 @@ main .card .readmore:hover{
 	color: #768db8;
 }
 main .card .card-content .card-title {
-    line-height: 36px; 
+
+    line-height: 36px;
 }
 main .card .delele {
 	position: absolute;
@@ -176,7 +175,7 @@ COMPONENT
 }
 .my-modal-dialog {
     padding: 10px 24px;
- 	max-height: 90%;
+ 	max-height: 95%;
   	max-width: 55%;
     margin: 0px auto;
     background-color: #eee;
@@ -253,6 +252,13 @@ COMPONENT
   opacity: 0.95 !important;
   filter: alpha(opacity=95) !important; 
 }
-.input-field .prefix.active { /* Contact me color*/
-color: #455A64;
+.btn {
+	margin-left: 5px;
 }
+.input-field .prefix.active { /* Contact me color*/
+	color: #455A64;
+}
+textarea.materialize-textarea {
+	overflow-y: auto;
+	max-height: 125px;
+	}

@@ -4,7 +4,7 @@
 	<?php 
 		foreach($portfolio as $index => $portfolio){
 		$card_id = $portfolio['Portfolio']['id'];
-		$card_title = $this->Text->truncate(str_replace('_',' ',$portfolio['Portfolio']['title']), 35, array('ellipsis' => '...'));
+		$card_title = $portfolio['Portfolio']['title'];
 		$card_detail = $portfolio['Portfolio']['detail'];
 		$card_detail_tc = $this->Text->truncate($portfolio['Portfolio']['detail'], 100, array('ellipsis' => '...','exact' => false));
 		$card_cover = 'portfolio/'.$card_id.'/image1.jpg'; 
@@ -23,7 +23,9 @@
 					<?php echo $this->Html->image($card_cover); ?>
 				</div>
 				<div class="card-content">
-					<span class="card-title activator grey-text text-darken-4"><?php echo $card_title; ?> <!-- <i class="mdi-navigation-more-vert right"></i>  --></span>
+					<span class="card-title activator grey-text text-darken-4 tooltipped"  data-position="top" data-delay="10" data-tooltip="<?php echo $card_title; ?>">
+						<?php echo $this->Text->truncate($card_title, 40,array('ellipsis' => '...','exact' => false)); ?>
+					</span>
 					<p><?php echo $this->Text->truncate(strip_tags($portfolio['Portfolio']['detail']).'', 150, array('ellipsis' => '...<br><span class="card-title activator readmore">READ MORE</span>','exact' => false)); ?></p>
 					
 				</div>
@@ -42,8 +44,22 @@
 	            	
 				</div>
 				<div class="card-reveal">
-					<span class="card-title grey-text text-darken-4 close"><?php echo $card_title; ?> <i class="mdi-navigation-close card-close"></i></span>
-					<div class="overflow"><?php echo $card_detail; ?></div>
+					<span class="card-title grey-text text-darken-4 close"><?php if(!$this->Session->check('Auth.User')) {echo $card_title;} ?> <i class="mdi-navigation-close card-close"></i></span>
+					<div class="overflow">
+					<?php 
+					if($this->Session->check('Auth.User')) {
+						$card_detail = str_replace('<br>',PHP_EOL, $card_detail);
+						echo $this->Form->create('Portfolio', array('type' => 'file', 'url' => array('controller' => 'Portfolios', 'action' => 'edit')));
+						echo $this->Form->input('id',array('value' => $card_id));
+						echo $this->Form->input('title',array('value' => $card_title));
+						echo $this->Form->input('detail',array('type' => 'textarea', 'class' => 'materialize-textarea', 'value' => $card_detail));
+						echo $this->Form->input('demo',array('label' => 'Demo link', 'value' => $card_demo));
+						//echo $this->Form->input('image.', array('label' => 'Upload images to gallery (Only JPEG file)','type' => 'file', 'multiple' => true, 'class' => 'upload-image-profile'));
+						echo $this->Form->button('Cancel', array('type' => 'reset', 'class' => 'btn teal darken-3 right'));
+						echo $this->Form->end(array('label' => 'Update', 'class' => 'btn teal darken-3 right'));
+					} 
+					else { echo $card_detail; } ?>
+					</div>
 				</div>
 			</div>
 			

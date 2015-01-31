@@ -61,7 +61,7 @@ HEADER WITH TOP NAV FOR MOBILE
     <header>
       <nav class="hide-on-large-only">
           <div class="nav-wrapper">
-          	<a href="#" class="brand-logo">NINE<strong>KAO</strong></a>
+          	<?php echo $this->html->link("NINE<strong>KAO</strong>","/",array('escape' => false, 'class' => 'brand-logo')); ?>
           	<a class="button-collapse" href="#" data-activates="nav-mobile"><i class="mdi-navigation-menu"></i></a>
           </div>
       </nav>

@@ -36,8 +36,8 @@
 			<div class="col s12 m4 l4 pLeft"><?php echo $this->Form->input('mobile',array('label' => 'Your mobile', 'value' => "$edit_mobile"));?></div>
 			<div class="col s12 m4 l4 pLeft"><?php echo $this->Form->input('facebook',array('label' => 'Your facebook', 'value' => "$edit_facebook"));?></div>
 			<?php 	
-			echo $this->Form->button('Cancel', array('type' => 'reset', 'class' => 'btn blue-grey darken-2 right'));
-			echo $this->Form->end(array('label' => 'Update', 'class' => 'btn blue-grey darken-2 right'));
+			echo $this->Form->button('Cancel', array('type' => 'reset', 'class' => 'btn teal darken-3 right'));
+			echo $this->Form->end(array('label' => 'Update', 'class' => 'btn teal darken-3 right'));
 			?>
 			</div>
 		</div>

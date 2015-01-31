@@ -20,8 +20,8 @@
 	        	</div>
 	        	<div class="row">
 	       		<?php 
-	       		echo $this->Form->button('Cancel', array('type' => 'reset', 'class' => 'btn blue-grey darken-2 right'));
-	   		 	echo $this->Form->end(array('label' => 'Login', 'class' => 'btn blue-grey darken-2 right'));
+	       		echo $this->Form->button('Cancel', array('type' => 'reset', 'class' => 'btn teal darken-3 right'));
+	   		 	echo $this->Form->end(array('label' => 'Login', 'class' => 'btn teal darken-3 right'));
 			    ?>
 			  </div>
 		</div>
